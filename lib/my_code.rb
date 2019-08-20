@@ -5,5 +5,9 @@ def map(array)
     new.push(yield(array[i]))
     i += -1
   end
+  new 
 end
  
+map(array) do |n|
+  n * -1
+end 
